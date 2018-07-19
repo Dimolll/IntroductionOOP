@@ -1,22 +1,23 @@
 public class Vector3D {
-    private int X;
-    private int Y;
-    private int Z;
+    private int x;
+    private int y;
+    private int z;
 
     public Vector3D(int x, int y, int z) {
-        X = x;
-        Y = y;
-        Z = z;
+        this.x = x;
+        this.y = y;
+        this.z = z;
     }
-     public Vector3D Addition(Vector3D B){
-        return new Vector3D(X+B.X, Y+B.Y,Z+B.Z);
+
+     public Vector3D addition(Vector3D b){
+        return new Vector3D(x +b.x, y +b.y, z +b.z);
      }
 
-     public Vector3D ScalarProduct( Vector3D B){
-        return new Vector3D(X*B.X, Y*B.Y,Z*B.Z);
+     public Vector3D scalarProduct( Vector3D b){
+        return new Vector3D(x *b.x, y *b.y, z *b.z);
      }
 
-     public Vector3D VectorProduct(Vector3D B){
-        return new Vector3D(Y*B.Z-Z*B.Y,Z*B.X-X*B.Z,X*B.Y-Y*B.X);
+     public Vector3D vectorProduct(Vector3D b){
+        return new Vector3D(y * b.z - z * b.y, z * b.x - x * b.z, x * b.y - y * b.x);
      }
 }

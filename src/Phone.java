@@ -1,7 +1,6 @@
 public class Phone {
 
     private String number;
-    private Network network=new Network();
 
     public String getNumber() {
         return number;
@@ -11,13 +10,19 @@ public class Phone {
         this.number=number;
     }
 
+    public Phone(){}
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
     private String registration(){
         return number;
     }
 
     public void call(String otherNumber, Network network){
         boolean result=false;
-        for(Phone num:network.getPhoneList()) {
+        for(Phone num:network.getPhones()) {
             if (num.getNumber().equals(otherNumber)) {
                 result = true;
                 break;

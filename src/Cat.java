@@ -8,6 +8,24 @@ public class Cat {
         this.wool=wool;
     }
 
+    public Cat(){}
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public boolean isWool() {
+        return wool;
+    }
+
+    public void setWool(boolean wool) {
+        this.wool = wool;
+    }
+
     public void say(){
         System.out.println(name + " say: Mew");
     }
