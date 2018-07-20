@@ -28,13 +28,13 @@ public class Main {
         System.out.println("\nfourth task\n");
         Network network=new Network(4);
         Phone num1=new Phone("0677478621");
-        network.setPhoneNumber(num1);
+        network=num1.registration(network);
         Phone num2=new Phone("0986291621");
-        network.setPhoneNumber(num2);
+        network=num2.registration(network);
         Phone num3=new Phone("0500091621");
-        network.setPhoneNumber(num3);
+        network=num3.registration(network);
         Phone num4=new Phone("0971564789");
-        network.setPhoneNumber(num4);
+        network=num4.registration(network);
 
         num1.call(num2.getNumber(),network);
         num3.call("0678797895",network);

@@ -16,12 +16,36 @@ public class Triangle {
 
     public Triangle(){}
 
-    private boolean checkTriangle(double AB,double BC, double AC){
-        return ((AB+BC)>AC) && ((AB+AC)>BC) && ((BC+AC)>AB);
+    private boolean checkTriangle(double ab,double bc, double ac){
+        return ((ab+bc)>ac) && ((ab+ac)>bc) && ((bc+ac)>ab);
     }
 
     public double square(){
         double p=(ab + bc + ac)/2;
         return Math.sqrt(p*(p- ab)*(p- bc)*(p- ac));
+    }
+
+    public double getAb() {
+        return ab;
+    }
+
+    public void setAb(double ab) {
+        this.ab = ab;
+    }
+
+    public double getBc() {
+        return bc;
+    }
+
+    public void setBc(double bc) {
+        this.bc = bc;
+    }
+
+    public double getAc() {
+        return ac;
+    }
+
+    public void setAc(double ac) {
+        this.ac = ac;
     }
 }

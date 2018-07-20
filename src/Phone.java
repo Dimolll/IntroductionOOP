@@ -2,22 +2,23 @@ public class Phone {
 
     private String number;
 
-    public String getNumber() {
-        return number;
-    }
-
     public Phone(String number){
         this.number=number;
     }
 
     public Phone(){}
 
+    public String getNumber() {
+        return number;
+    }
+
     public void setNumber(String number) {
         this.number = number;
     }
 
-    private String registration(){
-        return number;
+    public Network registration(Network network){
+        network.setPhoneNumber(this);
+        return network;
     }
 
     public void call(String otherNumber, Network network){
